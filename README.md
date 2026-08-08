@@ -1,5 +1,8 @@
 # Windows Dev Setup
 
+[![CI](https://github.com/ZQM-Labs/dev-setup/actions/workflows/ci.yml/badge.svg)](https://github.com/ZQM-Labs/dev-setup/actions/workflows/ci.yml) [![Tests](https://github.com/ZQM-Labs/dev-setup/actions/workflows/tests.yml/badge.svg)](https://github.com/ZQM-Labs/dev-setup/actions/workflows/tests.yml) [![Ruff](https://github.com/ZQM-Labs/dev-setup/actions/workflows/ci.yml/badge.svg)](https://github.com/ZQM-Labs/dev-setup/actions/workflows/ci.yml) [![mypy](https://github.com/ZQM-Labs/dev-setup/actions/workflows/ci.yml/badge.svg)](https://github.com/ZQM-Labs/dev-setup/actions/workflows/ci.yml)
+
+
 Automated bootstrap script to set up a complete Windows development environment from scratch.
 
 ## Quick Start
