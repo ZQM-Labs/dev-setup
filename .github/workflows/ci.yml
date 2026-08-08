@@ -1,0 +1,19 @@
+name: dev-setup
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+jobs:
+  pwsh-parse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check PowerShell files parse
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          Get-ChildItem -Recurse -Include *.ps1, *.psm1 | ForEach-Object {
+            $null = [System.Management.Automation.PSParser]::Tokenize($_.FullName, [ref]$null)
+            Write-Host "OK: $($_.FullName)"
+          }
